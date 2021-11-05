@@ -1,0 +1,19 @@
+{
+  "name": "task-1",
+  "scripts": {
+    "dev": "nodemon -w src",
+    "lint": "eslint src",
+    "start": "node --experimental-specifier-resolution=node src"
+  },
+  "devDependencies": {
+    "@shcherbin/eslint-config": "^0.1.2",
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.14"
+  },
+  "engines": {
+    "node": "16.x",
+    "yarn": "1.x"
+  },
+  "type": "module",
+  "private": true
+}
