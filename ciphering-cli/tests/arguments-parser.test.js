@@ -43,5 +43,5 @@ test('Skip unknown arguments', () => {
 test('Throw error on duplicate argument', () => {
   const args = ['-c', 'C1-A', '--config']
 
-  expect(() => parseArguments(args)).toThrowErrorMatchingSnapshot()
+  expect(() => parseArguments(args)).toThrow('"config" option is duplicated')
 })
