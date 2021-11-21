@@ -20,7 +20,7 @@ export default function parseConfig(config) {
       case 'R1':
         return new Rot8EncodeStream()
       default:
-        throw new Error('Unknown "config" pattern')
+        throw new Error(`Unknown "config" pattern: ${value}`)
     }
   })
 }

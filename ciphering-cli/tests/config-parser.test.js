@@ -45,5 +45,5 @@ test('Return multiple cipher streams', () => {
 })
 
 test('Throw unknown pattern error', () => {
-  expect(() => parseConfig('A-B')).toThrow('Unknown "config" pattern')
+  expect(() => parseConfig('A-B')).toThrow('Unknown "config" pattern: B')
 })
