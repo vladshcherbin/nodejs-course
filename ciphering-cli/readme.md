@@ -48,4 +48,10 @@ yarn test
 
 # yarn with coverage
 yarn test:coverage
+
+# npm
+npm run test
+
+# npm with coverage
+npm run test:coverage
 ```
