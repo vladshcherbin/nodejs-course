@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Throw error on duplicate argument 1`] = `"\\"config\\" option is duplicated"`;
