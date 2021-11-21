@@ -12,13 +12,9 @@ class ReadStream extends Readable {
 
   _construct(callback) {
     fs.open(this.filename, (error, fd) => {
-      if (error) {
-        callback(error)
-      } else {
-        this.fd = fd
+      this.fd = fd
 
-        callback()
-      }
+      callback()
     })
   }
 
@@ -26,20 +22,12 @@ class ReadStream extends Readable {
     const buffer = Buffer.alloc(n)
 
     fs.read(this.fd, buffer, 0, n, null, (error, bytesRead) => {
-      if (error) {
-        this.destroy(error)
-      } else {
-        this.push(bytesRead > 0 ? buffer.slice(0, bytesRead) : null)
-      }
+      this.push(bytesRead > 0 ? buffer.slice(0, bytesRead) : null)
     })
   }
 
   _destroy(error, callback) {
-    if (this.fd) {
-      fs.close(this.fd, (closeError) => callback(closeError || error))
-    } else {
-      callback(error)
-    }
+    fs.close(this.fd, (closeError) => callback(closeError || error))
   }
 }
 
