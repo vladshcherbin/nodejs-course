@@ -6,9 +6,9 @@
     "start": "node --experimental-specifier-resolution=node src"
   },
   "devDependencies": {
-    "@shcherbin/eslint-config": "^0.1.2",
-    "eslint": "^7.32.0",
-    "nodemon": "^2.0.14"
+    "@shcherbin/eslint-config": "^0.2.0",
+    "eslint": "^8.3.0",
+    "nodemon": "^2.0.15"
   },
   "engines": {
     "node": "16.x",
