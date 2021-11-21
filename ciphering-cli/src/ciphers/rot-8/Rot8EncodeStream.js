@@ -4,11 +4,7 @@ import { encode } from './algorithm'
 
 class Rot8EncodeStream extends Transform {
   _transform(chunk, _, callback) {
-    try {
-      callback(null, encode(chunk.toString()))
-    } catch (err) {
-      callback(err)
-    }
+    callback(null, encode(chunk.toString()))
   }
 }
 
