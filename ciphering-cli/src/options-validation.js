@@ -1,7 +1,7 @@
 import fs from 'fs/promises'
 import UserError from './UserError'
 
-const validConfigOptions = ['C1', 'C0', 'R1', 'R0', 'A']
+const validConfigOptions = ['A', 'C0', 'C1', 'R0', 'R1']
 
 function validateConfigOption(option) {
   return option.split('-').every((value) => validConfigOptions.includes(value))

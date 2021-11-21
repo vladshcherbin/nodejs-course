@@ -21,14 +21,14 @@ try {
     switch (value) {
       case 'A':
         return new AtbashEncodeStream()
-      case 'C1':
-        return new CaesarEncodeStream()
       case 'C0':
         return new CaesarDecodeStream()
-      case 'R1':
-        return new Rot8EncodeStream()
+      case 'C1':
+        return new CaesarEncodeStream()
       case 'R0':
         return new Rot8DecodeStream()
+      case 'R1':
+        return new Rot8EncodeStream()
       default:
         throw new Error('Unknown "config" pattern')
     }
