@@ -4,11 +4,7 @@ import { decode } from './algorithm'
 
 class CaesarDecodeStream extends Transform {
   _transform(chunk, _, callback) {
-    try {
-      callback(null, decode(chunk.toString()))
-    } catch (err) {
-      callback(err)
-    }
+    callback(null, decode(chunk.toString()))
   }
 }
 

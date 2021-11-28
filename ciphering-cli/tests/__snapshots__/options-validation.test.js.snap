@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Throw error when "config" option is missing 1`] = `"\\"config\\" option is missing"`;
+
+exports[`Throw error when "config" options has wrong value 1`] = `"\\"config\\" option contains wrong value"`;
+
+exports[`Throw error when "config" value is missing 1`] = `"\\"config\\" option value is missing"`;
+
+exports[`Throw error when "input" file is a directory 1`] = `"\\"input\\" file doesn't exist, no permission or is a directory"`;
+
+exports[`Throw error when "input" file is missing 1`] = `"\\"input\\" file doesn't exist, no permission or is a directory"`;
+
+exports[`Throw error when "input" value is missing 1`] = `"\\"input\\" option value is missing"`;
+
+exports[`Throw error when "output" file is a directory 1`] = `"\\"output\\" file doesn't exist, no permission or is a directory"`;
+
+exports[`Throw error when "output" file is missing 1`] = `"\\"output\\" file doesn't exist, no permission or is a directory"`;
+
+exports[`Throw error when "output" value is missing 1`] = `"\\"output\\" option value is missing"`;

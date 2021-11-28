@@ -10,14 +10,10 @@ class WriteStream extends Writable {
   }
 
   _construct(callback) {
-    fs.open(this.filename, 'a', (error, fd) => {
-      if (error) {
-        callback(error)
-      } else {
-        this.fd = fd
+    fs.open(this.filename, 'a', (_, fd) => {
+      this.fd = fd
 
-        callback()
-      }
+      callback()
     })
   }
 
@@ -26,11 +22,7 @@ class WriteStream extends Writable {
   }
 
   _destroy(error, callback) {
-    if (this.fd) {
-      fs.close(this.fd, (closeError) => callback(closeError || error))
-    } else {
-      callback(error)
-    }
+    fs.close(this.fd, (closeError) => callback(closeError || error))
   }
 }
 

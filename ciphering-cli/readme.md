@@ -37,3 +37,21 @@ Path to input file.
 Path to output file.
 
 For example, config `C1-C1-R0-A` means "encode by `Caesar`, next encode by `Caesar`, next decode by `ROT-8`, next use `Atbash`".
+
+### Tests
+
+To run tests, execute:
+
+```bash
+# yarn
+yarn test
+
+# yarn with coverage
+yarn test:coverage
+
+# npm
+npm run test
+
+# npm with coverage
+npm run test:coverage
+```
